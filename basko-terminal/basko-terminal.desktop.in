@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+_Name=Basko Terminal
+_Comment=Terminal Emulator
+_GenericName=Terminal Emulator
+Exec=basko-terminal
+Icon=basko-terminal
+Terminal=false
+Type=Application
+Categories=GTK;System;TerminalEmulator;
+StartupNotify=true
+Actions=preferences;
+
+[Desktop Action preferences]
+_Name=Terminal Preferences
+Exec=basko-terminal --preferences
