@@ -7,9 +7,9 @@ AM_CPPFLAGS = \
 	$(PLATFORM_CPPFLAGS)
 
 bin_PROGRAMS = \
-	xfce4-terminal
+	basko-terminal	
 
-xfce4_terminal_built_sources = \
+basko_terminal_built_sources = \
 	terminal-enum-types.c \
 	terminal-enum-types.h \
 	terminal-marshal.c \
@@ -17,7 +17,7 @@ xfce4_terminal_built_sources = \
 	terminal-window-ui.h \
 	terminal-preferences-ui.h
 
-xfce4_terminal_headers = \
+basko_terminal_headers = \
 	terminal-app.h \
 	terminal-encoding-action.h \
 	terminal-gdbus.h \
@@ -34,9 +34,9 @@ xfce4_terminal_headers = \
 	terminal-window.h \
 	terminal-window-dropdown.h
 
-xfce4_terminal_SOURCES = \
-	$(xfce4_terminal_built_sources) \
-	$(xfce4_terminal_headers) \
+basko_terminal_SOURCES = \
+	$(basko_terminal_built_sources) \
+	$(basko_terminal_headers) \
 	main.c \
 	terminal-app.c \
 	terminal-encoding-action.c \
@@ -52,7 +52,7 @@ xfce4_terminal_SOURCES = \
 	terminal-window.c \
 	terminal-window-dropdown.c
 
-xfce4_terminal_CFLAGS = \
+basko_terminal_CFLAGS = \
 	$(GTK_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(LIBX11_CFLAGS) \
@@ -61,12 +61,12 @@ xfce4_terminal_CFLAGS = \
 	$(XFCONF_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-xfce4_terminal_LDFLAGS = \
+basko_terminal_LDFLAGS = \
 	-no-undefined \
 	$(LIBX11_LDFLAGS) \
 	$(PLATFORM_LDFLAGS)
 
-xfce4_terminal_LDADD = \
+basko_terminal_LDADD = \
 	$(GTK_LIBS) \
 	$(GIO_LIBS) \
 	$(LIBX11_LIBS) \
@@ -76,7 +76,7 @@ xfce4_terminal_LDADD = \
 	$(TERMINAL_LIBS)
 
 if HAVE_UTEMPTER
-xfce4_terminal_LDADD += -lutempter
+basko_terminal_LDADD += -lutempter
 endif
 
 ##
@@ -96,12 +96,12 @@ CLEANFILES = \
 	xgen-tmh
 
 DISTCLEANFILES = \
-	$(xfce4_terminal_built_sources) \
+	$(basko_terminal_built_sources) \
 	stamp-terminal-enum-types.h \
 	stamp-terminal-marshal.h
 
 BUILT_SOURCES = \
-	$(xfce4_terminal_built_sources)
+	$(basko_terminal_built_sources)
 
 terminal-window-ui.h: $(srcdir)/terminal-window-ui.xml Makefile
 	$(AM_V_GEN) xdt-csource --strip-comments --strip-content --static --name=terminal_window_ui $< >$@

@@ -1,7 +1,7 @@
 # Based on Thunar's docs/Makefile.am
 
 man_MANS = \
-	xfce4-terminal.1
+	basko-terminal.1
 
 if MAINTAINER_MODE
 %.1: %.xml
@@ -10,6 +10,6 @@ endif
 
 EXTRA_DIST = \
 	$(man_MANS) \
-	xfce4-terminal.xml
+	basko-terminal.xml
 
 # vi:set ts=8 sw=8 noet ai softtabstop=0 syntax=automake:
