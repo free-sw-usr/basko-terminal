@@ -36,8 +36,8 @@
 #include <terminal/terminal-preferences.h>
 #include <terminal/terminal-private.h>
 
-#define TERMINALRC     "xfce4/terminal/terminalrc"
-#define TERMINALRC_OLD "Terminal/terminalrc"
+#define TERMINALRC     "basko-terminal/terminalrc"
+#define TERMINALRC_OLD "xfce4/terminal/terminalrc"
 
 
 enum
