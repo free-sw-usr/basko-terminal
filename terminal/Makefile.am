@@ -2,7 +2,7 @@ AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DDATADIR=\"$(datadir)\" \
 	-DHELPDIR=\"$(docdir)\" \
-	-DG_LOG_DOMAIN=\"xfce4-terminal\" \
+	-DG_LOG_DOMAIN=\"basko-terminal\" \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\" \
 	$(PLATFORM_CPPFLAGS)
 
