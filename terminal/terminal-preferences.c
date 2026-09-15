@@ -36,8 +36,7 @@
 #include <terminal/terminal-preferences.h>
 #include <terminal/terminal-private.h>
 
-#define TERMINALRC     "xfce4/terminal/terminalrc"
-#define TERMINALRC_OLD "Terminal/terminalrc"
+#define TERMINALRC     "basko-terminal/terminalrc"
 
 
 enum
@@ -1409,13 +1408,7 @@ terminal_preferences_load (TerminalPreferences *preferences)
 
   filename = xfce_resource_lookup (XFCE_RESOURCE_CONFIG, TERMINALRC);
   if (G_UNLIKELY (filename == NULL))
-    {
-      /* old location of the Terminal days */
-      filename = xfce_resource_lookup (XFCE_RESOURCE_CONFIG, TERMINALRC_OLD);
-      migrate_colors = TRUE;
-      if (G_UNLIKELY (filename == NULL))
         return;
-    }
 
   rc = xfce_rc_simple_open (filename, TRUE);
   if (G_UNLIKELY (rc == NULL))
