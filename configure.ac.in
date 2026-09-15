@@ -35,7 +35,7 @@ AC_COPYRIGHT([Copyright (c) 2003-2020
         os-cillation e.K. All rights reserved.
 
 Written by Benedikt Meurer <benny@xfce.org>.])
-AC_INIT([xfce4-terminal], [terminal_version], [https://gitlab.xfce.org/apps/xfce4-terminal/])
+AC_INIT([basko-terminal], [terminal_version], [https://gitlab.xfce.org/apps/xfce4-terminal/])
 AC_REVISION([@REVISION@])
 AC_PREREQ([2.69])
 AC_ARG_PROGRAM()
@@ -83,6 +83,13 @@ dnl ******************************
 dnl *** Check for i18n support ***
 dnl ******************************
 XDT_I18N([@LINGUAS@])
+
+dnl ******************************
+dnl *** Set gettext package name ***
+dnl ******************************
+GETTEXT_PACKAGE=basko-terminal
+AC_SUBST([GETTEXT_PACKAGE])
+AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [Gettext package])
 
 dnl ********************************
 dnl *** Check for X11 (optional) ***

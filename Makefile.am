@@ -23,7 +23,7 @@ ChangeLog: Makefile
 dist-hook: ChangeLog
 
 desktopdir = $(datadir)/applications
-desktop_in_files = xfce4-terminal.desktop.in xfce4-terminal-settings.desktop.in
+desktop_in_files = basko-terminal.desktop.in basko-terminal-settings.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
@@ -32,7 +32,7 @@ xmldir = $(GNOME_DEFAULT_APPSDIR)
 else
 xmldir = $(datadir)/gnome-control-center/default-apps
 endif
-xml_in_in_files = xfce4-terminal-default-apps.xml.in.in
+xml_in_in_files = basko-terminal-default-apps.xml.in.in
 xml_in_files = $(xml_in_in_files:.xml.in.in=.xml.in)
 %.xml.in: %.xml.in.in
 	sed -e "s,\@PACKAGE_EXEC\@,$(package_exec),g" < $< > $@

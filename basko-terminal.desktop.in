@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
-_Name=Xfce Terminal
+_Name=Basko Terminal
 _Comment=Terminal Emulator
 _GenericName=Terminal Emulator
-Exec=xfce4-terminal
-Icon=org.xfce.terminal
+Exec=basko-terminal
+Icon=basko-terminal
 Terminal=false
 Type=Application
 Categories=GTK;System;TerminalEmulator;
@@ -13,4 +13,4 @@ Actions=preferences;
 
 [Desktop Action preferences]
 _Name=Terminal Preferences
-Exec=xfce4-terminal --preferences
+Exec=basko-terminal --preferences

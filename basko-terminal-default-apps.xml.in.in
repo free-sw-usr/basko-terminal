@@ -3,7 +3,7 @@
 <default-apps>
   <terminals>
     <terminal>
-      <_name>Xfce Terminal Emulator</_name>
+      <_name>Basko-terminal Emulator</_name>
       <executable>@PACKAGE_EXEC@</executable>
       <command>@PACKAGE_EXEC@</command>
       <icon-name>utilities-terminal</icon-name>

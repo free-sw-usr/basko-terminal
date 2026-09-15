@@ -1018,8 +1018,8 @@ terminal_preferences_dialog_presets_load (TerminalPreferencesDialog *dialog)
   gchar        *path;
 
   /* load schemes */
-  global = xfce_resource_match (XFCE_RESOURCE_DATA, "xfce4/terminal/colorschemes/*", TRUE);
-  user = xfce_resource_match (XFCE_RESOURCE_CONFIG, "xfce4/terminal/colorschemes/*", TRUE);
+  global = xfce_resource_match (XFCE_RESOURCE_DATA, "basko-terminal/colorschemes/*", TRUE);
+  user = xfce_resource_match (XFCE_RESOURCE_CONFIG, "basko-terminal/colorschemes/*", TRUE);
   n_global = g_strv_length (global);
   n_user = g_strv_length (user);
   presets = g_new0 (gchar *, n_global + n_user);

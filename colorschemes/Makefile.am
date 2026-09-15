@@ -10,7 +10,7 @@ presets_in_files = 							\
 	white-on-black.theme.in						\
 	xterm.theme.in
 
-presetsdir = $(datadir)/xfce4/terminal/colorschemes
+presetsdir = $(datadir)/basko-terminal/colorschemes
 presets_DATA = $(presets_in_files:.theme.in=.theme)
 @INTLTOOL_THEME_RULE@
 
