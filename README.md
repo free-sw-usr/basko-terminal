@@ -30,7 +30,7 @@ https://github.com/free-sw-usr/basko-terminal
 
 From source code repository: 
 
-    % cd xfce4-terminal
+    % cd basko-terminal
     % ./autogen.sh
     % make
     % make install
