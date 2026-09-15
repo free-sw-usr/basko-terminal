@@ -49,7 +49,7 @@
 #include <terminal/terminal-window.h>
 #include <terminal/terminal-window-dropdown.h>
 
-#define ACCEL_MAP_PATH "xfce4/terminal/accels.scm"
+#define ACCEL_MAP_PATH "basko-terminal/accels.scm"
 #define TERMINAL_DESKTOP_FILE (DATADIR "/applications/xfce4-terminal.desktop")
 
 
